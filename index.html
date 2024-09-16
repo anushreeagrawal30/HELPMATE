@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HELPmate</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+  <link rel="stylesheet" href="css/jquery.timepicker.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .btn1{
+      color:red;
+    }
+    .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 50px ; 
+  }
+  .container{
+    padding-top: -50px;
+  }
+   
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script nonce="1075dc8f-27b5-4e0f-8c88-9e9740f36890">
+    try {
+      (function (w, d) {
+        !(function (b, c, d, e) {
+          b[d] = b[d] || {};
+          b[d].executed = [];
+          b.zaraz = { deferred: [], listeners: [] };
+          b.zaraz.q = [];
+          b.zaraz._f = function (f) {
+            return async function () {
+              var g = Array.prototype.slice.call(arguments);
+              b.zaraz.q.push({ m: f, a: g });
+            };
+          };
+          for (const h of ["track", "set", "debug"])
+            b.zaraz[h] = b.zaraz._f(h);
+          b.zaraz.init = () => {
+            var i = c.getElementsByTagName(e)[0],
+              j = c.createElement(e),
+              k = c.getElementsByTagName("title")[0];
+            k && (b[d].t = c.getElementsByTagName("title")[0].text);
+            b[d].x = Math.random();
+            b[d].w = b.screen.width;
+            b[d].h = b.screen.height;
+            b[d].j = b.innerHeight;
+            b[d].e = b.innerWidth;
+            b[d].l = b.location.href;
+            b[d].r = c.referrer;
+            b[d].k = b.screen.colorDepth;
+            b[d].n = c.characterSet;
+            b[d].o = new Date().getTimezoneOffset();
+            if (b.dataLayer)
+              for (const o of Object.entries(
+                Object.entries(dataLayer).reduce(
+                  (p, q) => ({ ...p[1], ...q[1] }),
+                  {}
+                )
+              ))
+                zaraz.set(o[0], o[1], { scope: "page" });
+            b[d].q = [];
+            for (; b.zaraz.q.length;) {
+              const r = b.zaraz.q.shift();
+              b[d].q.push(r);
+            }
+            j.defer = !0;
+            for (const s of [localStorage, sessionStorage])
+              Object.keys(s || {})
+                .filter((u) => u.startsWith("_zaraz_"))
+                .forEach((t) => {
+                  try {
+                    b[d]["z_" + t.slice(7)] = JSON.parse(s.getItem(t));
+                  } catch {
+                    b[d]["z_" + t.slice(7)] = s.getItem(t);
+                  }
+                });
+            j.referrerPolicy = "origin";
+            j.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(b[d])));
+            i.parentNode.insertBefore(j, i);
+          };
+          ["complete", "interactive"].includes(c.readyState)
+            ? zaraz.init()
+            : b.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    } catch (e) {
+      throw (fetch("/cdn-cgi/zaraz/t"), e);
+    }
+
+   
+  </script>
+  <script type='text/javascript'>
+ function checkshowLoginModal()
+{
+    return false;
+}
+  </script>
+</head>
+
+<body>
+  <div class="top"  style="background-color: rgb(215, 209, 209); data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row justify-content-between" style="color: rgb(10, 10, 9);">
+        <div class="col-sm text-md-left mb-md-0 pr-md-4 d-flex topper align-items-center">
+          <p class="mb-0 pl-2 pl-md-0 pr-4">
+            <span class="fa fa-paper-plane"></span>
+            <span class="text pl-2" style="color: black;"><a href="mailto:helpmate@gmail.com" class="__cf_email__"
+                style="color: rgb(10, 10, 9);">helpmate@gmail.com</a></span>
+          </p>
+          <p class="mb-0 pl-2 pl-md-0">
+            <span class="fa fa-phone-square"></span>
+            <span class="num pl-2" ><a href="tel:07552576839" style="color: black;">07552576839</a> </span>
+          
+          </p>
+        </div>
+        <div class="col-sm-5 col-lg-5 d-flex mb-md-0 align-items-center">
+          <p class="mb-0 pl-2 pl-md-0">
+            <span class="fa fa-clock-o"></span>
+            <span class="open pl-2">Mon - Sat (8am - 7pm) Sunday closed</span>
+          </p>
+          <div class="social-media">
+            <p class="mb-0 d-flex">
+              <a href="#" class="d-flex align-items-center justify-content-center"><span
+                  class="fa fa-facebook-square"><i class="sr-only">Facebook</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter-square"><i
+                    class="sr-only">Twitter</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
+                    class="sr-only">Instagram</i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="background-color: black !important;">
+    <div class="container" style="background-color: black ">
+      <a class="navbar-brand" href="index.html" style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;"></span>HELPmate</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <button class="bttnn" style="background-color: rgb(255, 149, 0);"onclick="document.location='login.php'">Login/Sign up</button>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero-wrap degree-right js-fullheight" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(img/main_bg.png); height: 600px;">
+          <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center">
+              <div class="col-md-6 ftco-animate">
+                <div class="mb-0" style="margin-top: -200px;">
+                  <p class="subheading">Available in Bhopal</p>
+                  <h1 class="mb-4">YOUR TRUSTED PARTNER IN HOMECARE.</h1>
+                  <p class="mb-4" style="font-size: 19px;">The Simplest way to get Your Life in Order with the Right Domestic Help.</p>
+                  <p><a href="services.html" class="btn btn-secondary">BOOK NOW</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="carousel-item" style="background-image: url(img/eee.png); height: 600px;">
+          <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center">
+              <div class="col-md-6 ftco-animate">
+                <div class="mb-0" style="margin-top: -200px;">
+                  <p class="subheading">Available in Bhopal</p>
+                  <h1 class="mb-4">YOUR TRUSTED PARTNER IN HOMECARE.</h1>
+                  <p class="mb-4" style="font-size: 19px;">The Simplest way to get Your Life in Order with the Right Domestic Help.</p>
+                  <p><a href="services.html" class="btn btn-secondary">BOOK NOW</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="ftcon" >
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h4 class="subheading">Our Featured Services</h4>
+          <h3 class="mb-4">
+            Hire professionals, Experienced specifically for your needs
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="services ftco-animate">
+            <div class="img" style="background-image: url(img/services-1.jpg.webp)"></div>
+            <div class="text">
+              <h3><a href="#">Domestic Help</a></h3>
+              <span>Book a professional helper..</span>
+              <a href="services6/domestic.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="sr-only">Learn more</span><span class="fa fa-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="services ftco-animate">
+            <div class="img" style="background-image: url(img/cook1.jpg)"></div>
+            <div class="text">
+              <h3><a href="#">Cook</a></h3>
+              <span>Book a professional cook...</span>
+              <a href="services6/cook.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="sr-only">Learn more</span><span class="fa fa-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="services ftco-animate">
+            <div class="img" style="background-image: url(img/babys.jpg)"></div>
+            <div class="text">
+              <h3><a href="#">Babysitter</a></h3>
+              <span>Book a professional babysitter...</span>
+              <a href="services6/babys.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="sr-only">Learn more</span><span class="fa fa-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="services ftco-animate">
+            <div class="img" style="background-image: url(img/patientcare.jpg)"></div>
+            <div class="text">
+              <h3><a href="#">Patient Care</a></h3>
+              <span>Book a qualified patient care...</span>
+              <a href="services6/patientcare.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="sr-only">Learn more</span><span class="fa fa-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="services ftco-animate">
+            <div class="img" style="background-image: url(img/caretaker.jpeg)"></div>
+            <div class="text">
+              <h3><a href="#">Care Taker</a></h3>
+              <span>Have a qualified caregiver...</span>
+              <a href="services6/caretaker.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="sr-only">Learn more</span><span class="fa fa-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="services ftco-animate">
+            <div class="img" style="background-image: url(img/live-in.jpg)"></div>
+            <div class="text">
+              <h3><a href="#">Live-in helper</a></h3>
+              <span>Have a trustworthy Live-in helper...</span>
+              <a href="services6/livein.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                  class="sr-only">Learn more</span><span class="fa fa-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--HOW IT WORKS-->
+  <section class="ftco-flow img" style="background-image: url(img/mainnn.color.jpg)">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row pb-4 justify-content-center">
+        <div class="col-md-8 text-center heading-section heading-section-white ftco-animate">
+          <span class="subheading">How it Works</span>
+          <h2 class="mb-4">Get Helper in 4 Simple Ways</h2>
+      </div>
+      <div class="row" style="flex-wrap: nowrap">
+        <div class="col-md-4" style="max-width: 25%">
+          <div class="services-3 text-center px-lg-5 ftco-animate">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-checklist"></span>
+              <span class="num d-flex align-items-center justify-content-center"><i>01</i></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Register on Website</h3>
+              <p>Visit the website and register yourself</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="max-width: 25%">
+          <div class="services-3 text-center px-lg-5 ftco-animate">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-calendar"></span>
+              <span class="num d-flex align-items-center justify-content-center"><i>02</i></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Select Your Service</h3>
+              <p>Choose from range of available services</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="max-width: 25%">
+          <div class="services-3 text-center px-lg-5 ftco-animate">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-rating"></span>
+              <span class="num d-flex align-items-center justify-content-center"><i>03</i></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Fill Details & Pay</h3>
+              <p>Share your preferences and complete the payment</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="max-width: 25%">
+          <div class="services-3 text-center px-lg-5 ftco-animate">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-cleaning-staff"></span>
+              <span class="num d-flex align-items-center justify-content-center"><i>04</i></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Get a Helper</h3>
+              <p>Get a professionally-trained and trusted helper on time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--highlights-->
+  <center>
+    <div class="bg-light" >
+  <br><br>
+  <h2 class="mb-4" style="margin-top: 30px;">HIGHLIGHTS <span style="color: rgb(254 157 0); font-family:Georgia, 'Times New Roman', Times, serif;">@HELPmate</span></h2>
+  <br>
+  <div class="gallery" style="margin-bottom: 50px;">
+    <div class="gallery-item">
+      <img style="width:140px;"
+        src= "img/1.png"
+        alt="Image 1">
+    </div>
+    
+    <div class="gallery-item">
+      <img style="width:360px;"
+        src="img/3.png"
+        alt="Image 3">
+    </div>
+    <div class="gallery-item">
+      <img style="width:400px;"
+        src="img/4.png"
+        alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img style="width:140px;"
+        src="img/2.png"
+        alt="Image 2">
+    </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+</center>
+
+<!--WHY CHOOSE US-->
+
+ <div id="features" >
+    <h2 style="text-align: center; color: black; font-weight: 800;">WHY CHOOSE US? </h2>
+    <div class="container">
+      <div class="row" style="margin-left: 50px;">
+        <div class="col-sm-4 col-12">
+          <figure>
+            <img src="https://broomees.com/assets/images/icon_reliable.png" alt="icon" loading="lazy" />
+          </figure>
+          <h3>Experienced and Reliable</h3>
+          <p style="width: 80%;">
+            We’re not an agency, but a young startup run by a passionate group
+            of professionals.
+          </p>
+        </div>
+
+        <div class="col-sm-4 col-12" style="margin-left: 10px;">
+          <figure>
+            <img style="width: 27%;" src="https://broomees.com/assets/images/icon_affordable.png" alt="icon"
+              loading="lazy" />
+          </figure>
+          <h3>Transparent Pricing</h3>
+          <p style="width: 90%;">
+            You get what you pay for. Additionally, you get replacement
+            guarantee, Covid-19 test reports, verification documents and more!
+          </p>
+        </div>
+
+        <div class="col-sm-4 col-12">
+          <figure>
+            <img style="width: 33%;" src="https://broomees.com/assets/images/icon_customer.png" alt="icon"
+              loading="lazy" />
+          </figure>
+          <h3>Customer Support</h3>
+          <p style="width: 80%;">
+            Our executives will always be there to hear you out and solve your
+            issues
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--TESTINOMIAL-->
+  <section class="ftco-section testimony-section bg-light" >
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row pb-4 justify-content-center">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Testimonial</span>
+          <h2 class="mb-4">What Are Clients Says</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container container-2">
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel">
+            <div class="item">
+              <div class="testimony-wrap d-flex">
+                <div class="user-img" style="background-image: url(img/person1.webp)"></div>
+                <div class="text">
+                  <p class="name">Avani Khanna</p>
+                  <span class="position">Bhopal</span>
+                  <p class="mb-2">
+                    This website is a lifesaver for busy individuals like me, offering reliable domestic services.It
+                    streamlines home management with convenience and peace of mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap d-flex">
+                <div class="user-img" style="background-image: url(img/person2.avif)"></div>
+                <div class="text">
+                  <p class="name">Aryan Sharma</p>
+                  <span class="position">Bhopal</span>
+                  <p class="mb-2">
+                    This website is a game-changer for accessing cooking services. It connects us with skilled cooks who
+                    provide delicious meals, saving time and ensuring nutritious eating on a busy schedule."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  </section>
+  <!--MORE INFORMATION-->
+
+  <section class="ftco-section" id="pricing-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4" style="font-weight: 800; color: rgba(60, 57, 57, 0.598); ">MORE INFORMATION <span style="color: rgb(254 157 0); font-family:Georgia, 'Times New Roman', Times, serif;">@HELPmate</span></h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 ftco-animate">
+          <div class="pricing-entry pb-5 text-center">
+            <div class="price-wrap">
+              <h3 class="mb-4">Register as a worker(HELPmate)</h3>
+            </div>
+            <p style="color: black; margin-bottom: 40px; padding: 20px">
+              Register to work with us! Just fill this form, and we will get
+              back to you.
+            </p>
+            <p class="button text-center" style="margin-bottom: 40px">
+              <a href="Register_Worker/register_helper.html" class="btn btn-primary px-4 py-3">Fill your details</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="pricing-entry active pb-5 text-center">
+            <div class="price-wrap">
+              <h3 class="mb-4">Get Health Insurance</h3>
+            </div>
+            <p style="color: black; margin-bottom: 40px; padding: 20px">
+              Get your worker the cheapest health insurance in partnership
+              with us & secure their health & future.
+            </p>
+            <p class="button text-center" style="margin-bottom: 40px">
+              <a href="#" class="btn btn-primary px-4 py-3">Fill your details</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="pricing-entry pb-5 text-center">
+            <div class="price-wrap">
+              <h3 class="mb-4">Refer a worker (Helpmate)</h3>
+            </div>
+            <p style="color: black; margin-bottom: 40px; padding: 20px">
+              Do your bit by getting them a job that pays well! Help them
+              register as a Broomee now & get rewards up to Rs. 100
+            </p>
+            <p class="button text-center" style="margin-bottom: 40px">
+              <a href="Refer_Worker/refer_worker.html" class="btn btn-primary px-4 py-3">Fill your details</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light" style="margin-bottom: -30px;">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate" style="margin-top: 10px;">
+          <h2 class="subheading">FAQS</h2>
+          <div class="faq-section">
+            <h4 style="color: black; font-size: 30px;
+            font-weight: bold;">Frequently Asked Questions</h4>
+            <br>
+            <div class="faq-item">
+              <h4 class="question">How can I hire a housemaid/babysitter/cook/care-taker from HELPmate</h4>
+              <div class="answer">
+                <p>You can easily request a maid by contacting us via phone, email, or through our website. We'll guide you through the process and match you with a suitable maid based on your needs.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h4 class="question">Is maid from HELPmate are reliable?</h4>
+              <div class="answer">
+                <p>Our data base holds the complete details of maids. I.e. ration card copy, or Voters card or Author card Photograph and other information of her was about.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h4 class="question">What happens if I need to cancel or reschedule?</h4>
+              <div class="answer">
+                <p>We understand that plans can change. Just give us a call as soon as possible, and we'll do our best to accommodate your request. We have a flexible cancellation and rescheduling policy to ensure convenience for our clients.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h4 class="question">What happens if I'm not satisfied with the service?</h4>
+              <div class="answer">
+                <p>Your satisfaction is our top priority. If you're not completely satisfied with the service, please let us know, and we'll make it right. We have a satisfaction guarantee policy to ensure you're happy with the results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="ftco-footer ">
+    <div class="container">
+      <div class="row mb-1 justify-content-between">
+        <div class= "col-md-6 col-lg">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2 logo"><a href="#">HELPmate</a></h2>
+            <p style="font-size: 16px;">
+              The Simplest way to get Your Life in Order with the Right Domestic Help.
+
+            </p>
+            <ul class="ftco-footer-social list-unstyled mt-2">
+              <li class="ftco-animate">
+                <a href="#"><span class="fa fa-twitter"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#"><span class="fa fa-instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       
+        <div class="col-md-6 col-lg-2">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Explore</h2>
+            <ul class="list-unstyled" style="font-size: 16px;">
+              <li>
+                <a href="about.html"><span class="fa fa-chevron-right mr-2"></span>About</a>
+              </li>
+              <li>
+                <a href="pricing.html"><span class="fa fa-chevron-right mr-2"></span>Pricing</a>
+              </li>
+              <li>
+                <a href="services.html"><span class="fa fa-chevron-right mr-2"></span>Services</a>
+              </li>
+              <li>
+                <a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li>
+                  <a href="https://maps.app.goo.gl/5B6sstZ1rGZBsAbf7">
+                    <span class="icon fa fa-map marker"></span><span class="text" style="font-size: 16px; text-align: left;">Govt. Women's
+                      Polytechnic College, Shivaji Nagar, Bhopal</span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon fa fa-phone"></span><span class="text">0755-2576839</span></a>
+                </li>
+                <li>
+                  <a href="mailto:helpmate@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span
+                      class="text"><span class="__cf_email__">Helpmate@gmail.com</span></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 py-5 bg-black">
+   
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="mb-0" style="color: rgba(255, 255, 255, 0.5)">
+                Copyright &copy;
+                <script data-cfasync="false"
+                  src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                HELPmate - All Rights Reserved
+
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+   
+    
+  </footer> 
+
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <!-- Add Bootstrap JS (replace with your Bootstrap JS link if not using Bootstrap CDN) -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-23581568-13");
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+    integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+    data-cf-beacon='{"rayId":"870bcb998dbb31be","version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+    crossorigin="anonymous"></script>
+  <script>
+    // JavaScript for FAQ section toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.question');
+      questions.forEach(function (question) {
+        question.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+          this.parentElement.classList.toggle('active');
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+          } else {
+            answer.style.display = 'block';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

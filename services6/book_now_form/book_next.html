@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domestic Helper Services Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="book_next.html" />
+    <style type="text/css">     
+        select {
+            width:420px;
+            height: 40px;
+        }
+        button {
+            width:420px;
+
+        }
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+        
+      <h1>Domestic Helper Services Booking</h1>
+      <form action="book_next.php" method="POST">
+        <label for="email">Enter Your Register Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter  Email" ><br>
+        
+        <label for="date1">Date of Booking:</label>
+        <input type="date" id="date1"name="date1" required />
+
+        <label for="time">Time of Booking:</label>
+        <input type="time" id="time" name="time" required />
+
+     
+        <label for="frequency" style="display:flex ;">Select Duration:</label>
+        <div class="dropdown" >
+            <select id="frequency" name="frequency" onchange="toggleDurationOptions()" >
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+         
+    
+        <div id="dailyOptions" style="display:none;">
+            <label for="dailyDuration">Daily Duration:</label>
+            <select id="dailyDuration" name="Duration">
+                <option value="Hourly Basis - 250/">Hourly Basis - 250/-</option>
+                <option value="Full Day Basis - NA/-">Full Day Basis - NA/-</option>
+            </select>
+        </div>
+
+    
+        <div id="weeklyOptions" style="display:none;">
+            <label for="weeklyDuration">Weekly Duration:</label>
+            <select id="weeklyDuration" name="Duration">
+                <option value="Hourly Basis - 1600/-">Hourly Basis - 1600/-</option>
+                <option value="Full Day Basis - NA/-">Full Day Basis - NA/-</option>
+            </select>
+        </div>
+    
+        <div id="monthlyOptions" style="display:none;">
+            <label for="monthlyDuration">Monthly Duration:</label>
+            <select id="monthlyDuration" name="Duration">
+                <option value="Hourly Basis - 6000/-">Hourly Basis - 6000/-</option>
+                <option value="Full Day Basis - 9000/-">Full Day Basis - 9000/-</option>
+            </select>
+        </div>
+    
+        <div id="yearlyOptions" style="display:none;">
+            <label for="yearlyDuration">Yearly Duration:</label>
+            <select id="yearlyDuration" name="Duration">
+                <option value="Hourly Basis - 65000/-">Hourly Basis - 65000/-</option>
+                <option value="Full Day Basis - 96000/-">Full Day Basis - 96000/-</option>
+            </select>
+        </div>
+      </div>
+    <label for="date"
+          >Start Date (The date you want the booking to proceed):</label>
+        <input type="date" id="date2" name="date" required />
+<label for="address">Address:</label><br>
+      <input type="text" id="address" name="address" placeholder="Enter Address" required><br>
+      <label for="zipcode"> Pin Code:</label><br>
+      <input type="text" id="code" name="pincode" placeholder="Enter pin code required" required><br>
+    
+            
+        
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </div>
+  
+    <script>
+      // Get the current time
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+
+      // Format the time as per the input field's requirements
+      const currentTime = `${hours}:${minutes}`;
+
+      // Set the value of the input field to the current time
+      document.getElementById("time").value = currentTime;
+      function toggleDurationOptions() {
+            var frequency = document.getElementById('frequency').value;
+            var dailyOptions = document.getElementById('dailyOptions');
+            var weeklyOptions = document.getElementById('weeklyOptions');
+            var monthlyOptions = document.getElementById('monthlyOptions');
+            var yearlyOptions = document.getElementById('yearlyOptions');
+
+            // Hide all options first
+            dailyOptions.style.display = 'none';
+            weeklyOptions.style.display = 'none';
+            monthlyOptions.style.display = 'none';
+            yearlyOptions.style.display = 'none';
+
+            // Show the relevant options based on the selected frequency
+            if (frequency === 'Daily') {
+                dailyOptions.style.display = 'block';
+            } else if (frequency === 'Weekly') {
+                weeklyOptions.style.display = 'block';
+            } else if (frequency === 'Monthly') {
+                monthlyOptions.style.display = 'block';
+            } else if (frequency === 'Yearly') {
+                yearlyOptions.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize with the correct options shown
+            toggleDurationOptions();
+        });
+      
+      function checkDate() {
+      var selectedDate = document.getElementById("date").value;
+      var now = new Date();
+      if (selectedDate<now) {
+       alert("Date must be in the future");
+      }
+    }
+     
+    </script>
+    <script>
+      // Get today's date
+      var today = new Date().toISOString().split('T')[0];
+
+      // Set the min attribute of the date picker to today's date
+      document.getElementById("date1").setAttribute("min", today);
+      
+      // Function to handle change in date selection
+      document.getElementById("date1").addEventListener("change", function() {
+          var selectedDate = document.getElementById("date1").value;
+          if (selectedDate < today) {
+              alert("Please select a date on or after today.");
+              document.getElementById("date1").value = today;
+          }
+      });
+  </script>
+  <script>
+    // Get today's date
+    var today = new Date().toISOString().split('T')[0];
+
+    // Set the min attribute of the date picker to today's date
+    document.getElementById("date2").setAttribute("min", today);
+    
+    // Function to handle change in date selection
+    document.getElementById("date2").addEventListener("change", function() {
+        var selectedDate = document.getElementById("date2").value;
+        if (selectedDate < today) {
+            alert("Please select a date on or after today.");
+            document.getElementById("date2").value = today;
+        }
+    });
+</script>
+     
+   
+  </body>
+</html>

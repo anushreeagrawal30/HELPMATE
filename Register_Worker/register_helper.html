@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as a worker (HELPmate)</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <img width="100%" height="100%" class="background" src="Images2/banner.jpeg" alt="banner">
+    <div class="forms">
+        <h2>REGISTER WITH US</h2>
+        
+        <form action="register1.php" method="POST">
+                <label for="Full Name">Name</label>
+                <input type="text" id="full_Name" name="full_name" placeholder="Enter your full name" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter your 10-digit phone number">
+
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+
+                <label for="occupation1">Worker Occupation (2-10 hours work)</label><br>
+                <input type="radio" id="domestic help" name="a1" value="Domestic Help">
+                <label for="domestic help">Domestic Help</label><br>
+                <input type="radio" id="cook" name="a1" value="Cook">
+                <label for="cook">Cook</label><br><br>
+
+                <label for="occupation2">Worker Occupation (upto 12 hours work)</label><br>
+                <input type="radio" id="caretaker" name="a2" value="Caretaker">
+                <label for="caretaker">Caretaker</label><br>
+                <input type="radio" id="patient care" name="a2" value="Patient Care">
+                <label for="patient care">Patient Care</label><br>
+                <input type="radio" id="babysitter" name="a2" value="Babysitter">
+                <label for="babysitter">Babysitter</label><br><br>
+
+                <label for="occupation3">Worker Occupation: Live-in Worker (24 hours work)</label><br>
+                <input type="radio" id="domestic help" name="a3" value="Domestic Help">
+                <label for="domestic help">Domestic Help</label><br>
+                <input type="radio" id="cook" name="a3" value="Cook">
+                <label for="cook">Cook</label><br>
+                <input type="radio" id="caretaker" name="a3" value="Caretaker">
+                <label for="caretaker">Caretaker</label><br>
+                <input type="radio" id="patient care" name="a3" value="Patient Care">
+                <label for="patient care">Patient Care</label><br>
+                <input type="radio" id="babysitter" name="a3" value="Babysitter">
+                <label for="babysitter">Babysitter</label><br><br>
+                <button type="submit" onclick="myFunction()">SUBMIT</button>
+        </form>
+    </div>
+    <script> 
+    function myFunction() {
+  alert("Registration Successfull!");
+}
+        </script>
+</body>
+</html>

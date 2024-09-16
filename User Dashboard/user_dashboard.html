@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "myDB";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?>
+    <img class="background" src="Images5/BannerImg5.jpg" alt="banner">
+    <h1 class="Head">My Account</h1>
+    <hr class="orangeline">
+    <h2 class="Head2">User Info</h2><p1>Your credentials and saved addresses.</p1>
+    <div class="main">
+        <p2>Personal Information</p2>
+        <hr class="orangeline2">
+        <p3>Phone</p3>
+        <p4>Name</p4>
+        <p5>Email</p5>
+        <img class="profile" src="Images5/profile.png" alt="profile">
+    </div>
+    <div class="Address">
+        <p6>Addresses</p6>
+        <hr class="orangeline3">
+        <div class="map">
+        <textarea class="Textarea" id="address-textarea" class="Textarea" placeholder="Enter your address"></textarea><br>
+        <button class="Button" onclick="showSelectedAddress()">Add new address</button>
+    </div>
+    </div>
+    <div class="BookingDeets">
+        <p7>Booking Details:</p7>
+        <hr class="orangeline4">
+        <p8>Service</p8><!-- ADD THE SERVICE HERE, EX: DOMESTIC HELP-->
+        <p9>Date of Booking</p9><!-- ADD DATE OF BOOKING HERE (THE DATE ON WHICH BOOKING WAS MADE)-->
+        <p10>Duration</p10><!-- ADD DURATION HERE, D/W/M/Y-->
+                         <!-- ADD WHETHER IT IS HOURLY OR FULL DAY-->
+        <p11>Start Date</p11><!-- ADD THE START DATE HERE (THE DATE ON WHICH USER WANTS THE BOOKING TO PROCEED)-->
+        <p12>Notes</p12><!-- ADD THE NOTES HERE / NA-->            
+    </div>
+    <div class="payment">
+        <p13>Payment</p13>
+        <hr class="orangeline5">
+        <p14>Scan the QR code for payment:</p14>
+        <img class="QRcode" src="Images5/QR.jpeg" alt="QR">
+        </div>
+<script src="script5.js"></script>
+</body>
+</html>
+

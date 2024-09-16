@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer a worker (HELPmate)</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <img width="100%" height="100%" class="background" src="Images3/banner.jpeg" alt="banner">
+    <div class="forms">
+        <h2>REFER A WORKER</h2>
+        <form action="refer_worker.php" method="POST">
+                <label for="Full Name"> Worker's Name</label>
+                <input type="text" id="Full Name"name="Worker_Name" placeholder="Enter worker's full name" required>
+                
+                <label for="phone">Worker's Phone Number</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter worker's phone number" required>
+
+                <label for="address">Worker's Address</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter worker's address"></textarea>
+
+                <label>Worker Occupation (2-10 hours work)</label><br>
+                <input type="radio" id="domestic help" name="a1" value="Domestic Help">
+                <label for="domestic help">Domestic Help</label><br>
+                <input type="radio" id="cook" name="a1" value="Cook">
+                <label for="cook">Cook</label><br><br>
+
+                <label>Worker Occupation (upto 12 hours work)</label><br>
+                <input type="radio" id="caretaker" name="a2" value="Caretaker">
+                <label for="caretaker">Caretaker</label><br>
+                <input type="radio" id="patient care" name="a2" value="Patient Care">
+                <label for="patient care">Patient Care</label><br>
+                <input type="radio" id="babysitter" name="a2" value="Babysitter">
+                <label for="babysitter">Babysitter</label><br><br>
+
+                <label>Worker Occupation: Live-in Worker (24 hours work)</label><br>
+                <input type="radio" id="domestic help" name="a3" value="Domestic Help">
+                <label for="domestic help">Domestic Help</label><br>
+                <input type="radio" id="cook" name="a3" value="Cook">
+                <label for="cook">Cook</label><br>
+                <input type="radio" id="caretaker" name="a3" value="Caretaker">
+                <label for="caretaker">Caretaker</label><br>
+                <input type="radio" id="patient care" name="a3" value="Patient Care">
+                <label for="patient care">Patient Care</label><br>
+                <input type="radio" id="babysitter" name="a3" value="Babysitter">
+                <label for="babysitter">Babysitter</label><br><br>
+
+                <label for="Full Name">Form filled by? (Name)</label>
+                <input type="text" id="Full Name" name="Full_Name" placeholder="Enter your full name" required>
+
+                <label for="phone2">Form filled by? (Number)</label>
+                <input type="text" id="phone2" name="phone2" pattern="[0-9]{10}" required placeholder="Enter your phone number" required>
+
+                <label for="upi_id">Enter your UPI ID for receiving the reward</label><br>
+                <input type="text" id="upi_id" name="upi_id" placeholder="Enter you UPI ID">
+
+                <button type="submit"  onclick="myFunction()">SUBMIT</button>
+        </form>
+    </div>
+    <script> 
+        function myFunction() {
+      alert("Registration Successfull!");
+    }
+            </script>
+</body>
+</html>

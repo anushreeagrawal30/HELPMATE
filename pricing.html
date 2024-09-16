@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HELPmate</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />	
+    <link rel="preconnect"
+		href="https://fonts.googleapis.com"> 
+	<link rel="preconnect"
+		href="https://fonts.gstatic.com" crossorigin>
+    <script nonce="95cdcacc-4396-4052-adf7-c948d00b32a0">
+      try {
+        (function (w, d) {
+          !(function (b, c, d, e) {
+            b[d] = b[d] || {};
+            b[d].executed = [];
+            b.zaraz = { deferred: [], listeners: [] };
+            b.zaraz.q = [];
+            b.zaraz._f = function (f) {
+              return async function () {
+                var g = Array.prototype.slice.call(arguments);
+                b.zaraz.q.push({ m: f, a: g });
+              };
+            };
+            for (const h of ["track", "set", "debug"])
+              b.zaraz[h] = b.zaraz._f(h);
+            b.zaraz.init = () => {
+              var i = c.getElementsByTagName(e)[0],
+                j = c.createElement(e),
+                k = c.getElementsByTagName("title")[0];
+              k && (b[d].t = c.getElementsByTagName("title")[0].text);
+              b[d].x = Math.random();
+              b[d].w = b.screen.width;
+              b[d].h = b.screen.height;
+              b[d].j = b.innerHeight;
+              b[d].e = b.innerWidth;
+              b[d].l = b.location.href;
+              b[d].r = c.referrer;
+              b[d].k = b.screen.colorDepth;
+              b[d].n = c.characterSet;
+              b[d].o = new Date().getTimezoneOffset();
+              if (b.dataLayer)
+                for (const o of Object.entries(
+                  Object.entries(dataLayer).reduce(
+                    (p, q) => ({ ...p[1], ...q[1] }),
+                    {}
+                  )
+                ))
+                  zaraz.set(o[0], o[1], { scope: "page" });
+              b[d].q = [];
+              for (; b.zaraz.q.length; ) {
+                const r = b.zaraz.q.shift();
+                b[d].q.push(r);
+              }
+              j.defer = !0;
+              for (const s of [localStorage, sessionStorage])
+                Object.keys(s || {})
+                  .filter((u) => u.startsWith("_zaraz_"))
+                  .forEach((t) => {
+                    try {
+                      b[d]["z_" + t.slice(7)] = JSON.parse(s.getItem(t));
+                    } catch {
+                      b[d]["z_" + t.slice(7)] = s.getItem(t);
+                    }
+                  });
+              j.referrerPolicy = "origin";
+              j.src =
+                "/cdn-cgi/zaraz/s.js?z=" +
+                btoa(encodeURIComponent(JSON.stringify(b[d])));
+              i.parentNode.insertBefore(j, i);
+            };
+            ["complete", "interactive"].includes(c.readyState)
+              ? zaraz.init()
+              : b.addEventListener("DOMContentLoaded", zaraz.init);
+          })(w, d, "zarazData", "script");
+        })(window, document);
+      } catch (e) {
+        throw (fetch("/cdn-cgi/zaraz/t"), e);
+      }
+      const pricingButton = document.getElementById("pricing-button");
+const serviceContainer = document.getElementById("service-container");
+const continueButton = document.getElementById("continue-button");
+
+pricingButton.addEventListener("click", () => {
+  serviceContainer.classList.remove("hidden");
+});
+
+
+continueButton.addEventListener("click", () => {
+  serviceContainer.classList.add("hidden");
+  
+    // Get the button element
+    var continueButton = document.getElementById("continue-button");
+
+    // Add a click event listener to the button
+    continueButton.addEventListener("click", function() {
+        // Change the window location to the desired URL
+        window.location.href = "services6\domestic.html";
+    });
+
+});
+    </script>
+    <style>
+      h3 { 
+          text-align: center; 
+          text-transform: uppercase; 
+      } 
+      
+      h1 { 
+          position: relative; 
+          
+          margin: 2rem auto 5rem auto; 
+      } 
+      
+    
+      
+      i { 
+          font-size: 3rem; 
+          color: rgb(0, 0, 0); 
+          padding: 1rem; 
+          transition: all 0.3s linear; 
+          transform: rotate(-45deg); 
+      } 
+      
+      .services-container { 
+          max-width: 1200px; 
+          margin: 0 auto; 
+          padding: 20px; 
+          display: flex; 
+          flex-wrap: wrap; 
+          justify-content: space-around; 
+      } 
+      
+      .service-card { 
+          cursor: pointer; 
+          width: 300px; 
+          margin: 20px; 
+          padding: 2rem 20px 20px 20px; 
+          text-align: center; 
+          border-radius: 5px; 
+          transition: all 0.3s ease-in-out; 
+          background-size: cover;
+          background-color: rgb(255, 115, 0);
+      } 
+      
+      .icon-container { 
+          border: 2px solid rgb(255, 115, 0); 
+          transition: 0.3s linear; 
+          width: max-content; 
+          margin: 0 auto; 
+          transform: rotate(45deg); 
+      } 
+      
+      .service-card:hover { 
+          box-shadow: 0 0 30px 0 rgb(238, 207, 144); 
+          transform: scale(1.1); 
+      } 
+      
+      .service-card a { 
+          color: rgb(255, 255, 255); 
+          text-decoration: none; 
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: rgb(255, 115, 0);
+          color: #ffffff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      button {
+          width: 100%;
+          padding: 10px;
+          background-color: rgb(255, 115, 0);
+          color: #ffffff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      
+      
+      button:hover {
+          background-color: rgb(255, 115, 0);
+      }
+      
+      } 
+      .hidden {
+        display: none;
+      }
+      
+      .service-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #service-image {
+        max-width: 100%;
+        max-height: fit-content;
+      }
+      
+      .continue-button {
+        margin: top 0;;
+        background-color: rgb(255, 115, 0);
+        color:  rgb(0, 0, 0);
+        border: none;
+      }
+      .service-button{
+        color: #ffffff;
+        border: none;
+        
+      }
+      #image-container {
+        display: none; /* Initially hide the container */
+            position: fixed; 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the container */
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #pricing-image {
+          display: block;
+            max-width: 100%;
+            max-height: 80vh;
+        }
+      
+      
+      </style>
+  </head>
+  <body>
+    <body>
+      <div class="top" style="background-color: #f3b70e;">
+        <div class="container">
+          <div class="row justify-content-between" style="color: rgb(10, 10, 9);">
+            <div class="col-sm text-md-left mb-md-0 pr-md-4 d-flex topper align-items-center">
+              <p class="mb-0 pl-2 pl-md-0 pr-4">
+                <span class="fa fa-paper-plane"></span>
+                <span class="text pl-2" style="color: black;"><a href="mailto:helpmate@gmail.com" class="__cf_email__"
+                    style="color: rgb(10, 10, 9);">Helpmate@gmail.com</a></span>
+              </p>
+              <p class="mb-0 pl-2 pl-md-0">
+                <span class="fa fa-phone-square"></span>
+                <span class="num pl-2" ><a href="tel:07552576839" style="color: black;">07552576839</a> </span>
+              </p>
+            </div>
+            <div class="col-sm-5 col-lg-5 d-flex mb-md-0 align-items-center">
+              <p class="mb-0 pl-2 pl-md-0">
+                <span class="fa fa-clock-o"></span>
+                <span class="open pl-2">Mon - Sat (8am - 7pm) Sunday closed</span>
+              </p>
+              <div class="social-media">
+                <p class="mb-0 d-flex">
+                  <a href="#" class="d-flex align-items-center justify-content-center"><span
+                      class="fa fa-facebook-square"><i class="sr-only">Facebook</i></span></a>
+                  <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter-square"><i
+                        class="sr-only">Twitter</i></span></a>
+                  <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
+                        class="sr-only">Instagram</i></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container" style="background-color: black;">
+          <a class="navbar-brand" href="index.html" style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;"></span>HELPmate</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item active">
+                <a href="pricing.html" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+            <button class="bttnn" style="background-color: rgb(255, 149, 0);"onclick="document.location='login.php'">Login/Sign Up</button>
+          </div>
+        </div>
+      </nav>
+    <section
+      class="hero-wrap hero-wrap-2"
+      style="background-image: url('img/pricing_bg.png')"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 ftco-animate pb-5">
+            <p class="breadcrumbs">
+              <span class="mr-2"
+                ><a href="index.html"
+                  >Home <i class="fa fa-chevron-right"></i></a
+              ></span>
+              <span>Pricing <i class="fa fa-chevron-right"></i></span>
+            </p>
+            <h1 class="mb-0 bread">Our Plans &amp; Pricing</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+   
+   <br><br><br><br>
+   <div class="services-container" > 
+		<div class="service-card" style="background-image: url('babys.jpg');" > 
+			<div class="icon-container"> 
+			</div> 
+   <h3>domestic help</h3>  
+   <button id="pricing-button" class="service-button" style="background-color:  rgb(255, 115, 0);">View Pricing</button>
+   <div id="image-container">
+    <img id="pricing-image" src="img/price.jpg" alt="Pricing Image">
+   <!-- <div id="service-container" class="service-container hidden">
+      <img src="img/price.jpg" alt="Service Image" id="service-image" /> 
+     <img id="service-container" src="img/price.jpg" alt="Pricing Image" class="hidden">
+     <button id="continue-button" class="continue-button">Continue</button> -->
+   </div>
+    </div>
+
+     <div class="service-card"> 
+   <div class="icon-container">  
+   </div> 
+   <h3>cook</h3> 
+   <a href="#" class="button">view pricing</a> 
+   
+</div>
+
+
+ <div class="service-card"> 
+   <div class="icon-container">  
+   </div> 
+   <h3>babysitter</h3> 
+   <p> 
+ </p> 
+   <a href="#" class="button">view pricing</a> 
+ </div> 
+
+ <div class="service-card"> 
+   <div class="icon-container">  
+   </div> 
+   <h3>caretaker</h3> 
+   <p> 
+     </p> 
+   <a href="#" class="button">view pricing</a> 
+ </div> 
+
+ <div class="service-card"> 
+   <div class="icon-container">  
+   </div> 
+   <h3>PATIENT CARE</h3> 
+   <p> 
+     </p> 
+   <a href="#" class="button">view pricing</a> 
+ </div> 
+
+ <div class="service-card"> 
+   <div class="icon-container"> 
+      
+   </div> 
+         <h3>live in helper</h3> 
+
+   <a href="#" class="button">view pricing</a> 
+ </div> </div><BR><HR>
+     <h4 style="text-align:center;background-color: orange;">Helpmate offers completely certified workers with an complimentary replacement policy</h4>
+<HR></div> 
+      <br><br><br>
+
+    <!--FAQS-->
+    <section class="ftco-section bg-light" style="margin-bottom: -90px; ">
+      <div class="container" >
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate" style="margin-top: -70px;">
+            <h2 class="subheading">FAQS</h2>
+            <div class="faq-section">
+              <h4 style="color: black; font-size: 30px;
+              font-weight: bold;">Frequently Asked Questions</h4>
+              <br>
+              <div class="faq-item">
+                <h4 class="question">How can I hire a housemaid/babysitter/cook/care-taker from HELPmate</h4>
+                <div class="answer">
+                  <p>You can easily request a maid by contacting us via phone, email, or through our website. We'll guide you through the process and match you with a suitable maid based on your needs.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <h4 class="question">Is maid from HELPmate are reliable?</h4>
+                <div class="answer">
+                  <p>Our data base holds the complete details of maids. I.e. ration card copy, or Voters card or Author card Photograph and other information of her was about.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <h4 class="question">What happens if I need to cancel or reschedule?</h4>
+                <div class="answer">
+                  <p>We understand that plans can change. Just give us a call as soon as possible, and we'll do our best to accommodate your request. We have a flexible cancellation and rescheduling policy to ensure convenience for our clients.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <h4 class="question">What happens if I'm not satisfied with the service?</h4>
+                <div class="answer">
+                  <p>Your satisfaction is our top priority. If you're not completely satisfied with the service, please let us know, and we'll make it right. We have a satisfaction guarantee policy to ensure you're happy with the results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+            
+            <br><br>
+            <footer class="ftco-footer ">
+              <div class="container">
+                <div class="row mb-1 justify-content-between">
+                  <div class= "col-md-6 col-lg">
+                    <div class="ftco-footer-widget mb-4">
+                      <h2 class="ftco-heading-2 logo"><a href="#">HELPmate</a></h2>
+                      <p style="font-size: 16px;">
+                        The Simplest way to get Your Life in Order with the Right Domestic Help.
+          
+                      </p>
+                      <ul class="ftco-footer-social list-unstyled mt-2">
+                        <li class="ftco-animate">
+                          <a href="#"><span class="fa fa-twitter"></span></a>
+                        </li>
+                        <li class="ftco-animate">
+                          <a href="#"><span class="fa fa-facebook"></span></a>
+                        </li>
+                        <li class="ftco-animate">
+                          <a href="#"><span class="fa fa-instagram"></span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                 
+                  <div class="col-md-6 col-lg-2">
+                    <div class="ftco-footer-widget mb-4">
+                      <h2 class="ftco-heading-2">Explore</h2>
+                      <ul class="list-unstyled" style="font-size: 16px;">
+                        <li>
+                          <a href="about.html"><span class="fa fa-chevron-right mr-2"></span>About</a>
+                        </li>
+                        <li>
+                          <a href="pricing.html"><span class="fa fa-chevron-right mr-2"></span>Pricing</a>
+                        </li>
+                        <li>
+                          <a href="services.html"><span class="fa fa-chevron-right mr-2"></span>Services</a>
+                        </li>
+                        <li>
+                          <a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a>
+                        </li>
+          
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg">
+                    <div class="ftco-footer-widget mb-4">
+                      <h2 class="ftco-heading-2">Have a Questions?</h2>
+                      <div class="block-23 mb-3">
+                        <ul>
+                          <li>
+                            <a href="https://maps.app.goo.gl/5B6sstZ1rGZBsAbf7">
+                              <span class="icon fa fa-map marker"></span><span class="text" style="font-size: 16px; text-align: left;">Govt. Women's
+                                Polytechnic College, Shivaji Nagar, Bhopal</span></a>
+                          </li>
+                          <li>
+                            <a href="#"><span class="icon fa fa-phone"></span><span class="text">0755-2576839</span></a>
+                          </li>
+                          <li>
+                            <a href="mailto:helpmate@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span
+                                class="text"><span class="__cf_email__">Helpmate@gmail.com</span></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid px-0 py-5 bg-black">
+             
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="mb-0" style="color: rgba(255, 255, 255, 0.5)">
+                          Copyright &copy;
+                          <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                          <script>
+                            document.write(new Date().getFullYear());
+                          </script>
+                          HELPmate - All Rights Reserved
+          
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+             
+              
+            </footer> 
+
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+   
+  <script>
+  document.getElementById('pricing-button').addEventListener('click', function() {
+    var imageContainer = document.getElementById('image-container');
+    imageContainer.style.display = 'block'; // Show the image container
+});
+
+// Close the container when clicking outside the image
+document.addEventListener('click', function(event) {
+    var imageContainer = document.getElementById('image-container');
+    if (event.target.id !== 'pricing-button' && !imageContainer.contains(event.target)) {
+        imageContainer.style.display = 'none'; // Hide the image container
+    }
+});
+
+</script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"870bca803e5c31be","version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      crossorigin="anonymous">
+      
+
+
+    </script>
+  </body>
+</html>

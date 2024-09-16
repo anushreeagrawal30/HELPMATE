@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HELPmate</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="2c4eb35d-b9ad-45f7-97a1-3ef0fee66d95">
+      try {
+        (function (w, d) {
+          !(function (b, c, d, e) {
+            b[d] = b[d] || {};
+            b[d].executed = [];
+            b.zaraz = { deferred: [], listeners: [] };
+            b.zaraz.q = [];
+            b.zaraz._f = function (f) {
+              return async function () {
+                var g = Array.prototype.slice.call(arguments);
+                b.zaraz.q.push({ m: f, a: g });
+              };
+            };
+            for (const h of ["track", "set", "debug"])
+              b.zaraz[h] = b.zaraz._f(h);
+            b.zaraz.init = () => {
+              var i = c.getElementsByTagName(e)[0],
+                j = c.createElement(e),
+                k = c.getElementsByTagName("title")[0];
+              k && (b[d].t = c.getElementsByTagName("title")[0].text);
+              b[d].x = Math.random();
+              b[d].w = b.screen.width;
+              b[d].h = b.screen.height;
+              b[d].j = b.innerHeight;
+              b[d].e = b.innerWidth;
+              b[d].l = b.location.href;
+              b[d].r = c.referrer;
+              b[d].k = b.screen.colorDepth;
+              b[d].n = c.characterSet;
+              b[d].o = new Date().getTimezoneOffset();
+              if (b.dataLayer)
+                for (const o of Object.entries(
+                  Object.entries(dataLayer).reduce(
+                    (p, q) => ({ ...p[1], ...q[1] }),
+                    {}
+                  )
+                ))
+                  zaraz.set(o[0], o[1], { scope: "page" });
+              b[d].q = [];
+              for (; b.zaraz.q.length; ) {
+                const r = b.zaraz.q.shift();
+                b[d].q.push(r);
+              }
+              j.defer = !0;
+              for (const s of [localStorage, sessionStorage])
+                Object.keys(s || {})
+                  .filter((u) => u.startsWith("_zaraz_"))
+                  .forEach((t) => {
+                    try {
+                      b[d]["z_" + t.slice(7)] = JSON.parse(s.getItem(t));
+                    } catch {
+                      b[d]["z_" + t.slice(7)] = s.getItem(t);
+                    }
+                  });
+              j.referrerPolicy = "origin";
+              j.src =
+                "/cdn-cgi/zaraz/s.js?z=" +
+                btoa(encodeURIComponent(JSON.stringify(b[d])));
+              i.parentNode.insertBefore(j, i);
+            };
+            ["complete", "interactive"].includes(c.readyState)
+              ? zaraz.init()
+              : b.addEventListener("DOMContentLoaded", zaraz.init);
+          })(w, d, "zarazData", "script");
+        })(window, document);
+      } catch (e) {
+        throw (fetch("/cdn-cgi/zaraz/t"), e);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="top" style="background-color:#f3b70e;">
+      <div class="container">
+        <div class="row justify-content-between" style="color: rgb(10, 10, 9);">
+          <div class="col-sm text-md-left mb-md-0 pr-md-4 d-flex topper align-items-center">
+            <p class="mb-0 pl-2 pl-md-0 pr-4">
+              <span class="fa fa-paper-plane"></span>
+              <span class="text pl-2" style="color: black;"><a href="mailto:helpmate@gmail.com" class="__cf_email__"
+                  style="color: rgb(10, 10, 9);">Helpmate@gmail.com</a></span>
+            </p>
+            <p class="mb-0 pl-2 pl-md-0">
+              <span class="fa fa-phone-square"></span>
+              <span class="num pl-2" ><a href="tel:07552576839" style="color: black;">07552576839</a> </span>
+            </p>
+          </div>
+          <div class="col-sm-5 col-lg-5 d-flex mb-md-0 align-items-center">
+            <p class="mb-0 pl-2 pl-md-0">
+              <span class="fa fa-clock-o"></span>
+              <span class="open pl-2">Mon - Sat (8am - 7pm) Sunday closed</span>
+            </p>
+            <div class="social-media">
+              <p class="mb-0 d-flex">
+                <a href="#" class="d-flex align-items-center justify-content-center"><span
+                    class="fa fa-facebook-square"><i class="sr-only">Facebook</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter-square"><i
+                      class="sr-only">Twitter</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
+                      class="sr-only">Instagram</i></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container" style="background-color: black;">
+        <a class="navbar-brand" href="index.html" style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;"></span>HELPmate</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <button class="bttnn" style="background-color: rgb(255, 149, 0);"onclick="document.location.href='login.php'">Login/Sign Up</button>        </div>
+      </div>
+    </nav>
+    <section
+      class="hero-wrap hero-wrap-2"
+      style="background-image: url('Images1/wepik-export-20240416143249FsBs.png')"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 ftco-animate pb-5">
+            <p class="breadcrumbs">
+              <span class="mr-2"
+                ><a href="index.html"
+                  >Home <i class="fa fa-chevron-right"></i></a
+              ></span>
+              <span>About us <i class="fa fa-chevron-right"></i></span>
+            </p>
+            <h1 class="mb-0 bread">About Us</h1>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    
+
+    <section style="color: rgb(70, 69, 69);">
+  <div>
+     <center><div class="back-text">
+          <h1 class="head1">We are   <span class="head2">HELPmate</span></h1>
+         
+          <p class="para1">Ready to sweep away your worries!</p>
+          <p class="para2">A platform that offers a simple approach to get your life in order with the right domestic<br> assistance. We are a group of driven individuals ensuring a smooth experience.</p>
+      </div></center> 
+  </div>
+</div>
+    </section>
+<div id="VM"style="color: rgb(70, 69, 69);">
+  <div class="Mission" id="missiondiv">
+      <img src="Images1/TargetIcon.png" alt="Target Icon" class="Targetpng">
+      <p class="Mpara1">Mission</p>
+      <p class="Mpara2">Enabling our clients to connect with skilled, reliable and verified professionals and facilitating the provision<br> of services by the service providers.</p>
+  </div>
+  <div class="Vision" id="visiondiv">
+      <img src="Images1/EyeIcon2.png" alt="Eye Icon" class="Eyepng">
+      <p class="Vpara1">Vision</p>
+      <p class="Vpara2">Revolutionizing households by delivering top-tier domestic services, redefining convinience and being the foundation of effortless living.</p>
+  </div>   
+</div>  
+<div class="Approach" style="color: rgb(70, 69, 69);">
+  <img src="Images1/gradient.jpg" alt="gradient line">
+  <div class="ApproachText">
+  <p class="approachHead">OUR OFFERINGS AND APPROACH</p>
+  <p class="approachInfo">We aim to establish a thorough connectivity between the clients and the helpers.<br> Increasing availability at both the ends, we provide various services such as domestic help, cook, and babysitter.<br> With a variety of service packages, we offer trained and verified helpers at reliable rates.<br> The platform is time saving and provides an easy registration.<br> Along with 24-hour service, we provide full-time client assistance.</p>
+  </div>
+</div>
+<div class="Motive" style="color: rgb(70, 69, 69);">
+  <img src="Images1/gradient.jpg" alt="gradient line">
+  <div class="MotiveText">
+      <p class="motiveHead">THE MOTIVE BEHIND OUR EFFORTS</p>
+      <p class="motiveInfo">At HELPmate, we're not just about domestic help; we're about transforming lives. Our journey began with a simple realization: amid the chaos of modern life, the tranquility of home is frequently overlooked. It's a constant struggle to balance work and household. We talked to the people around us and recognized the widespread need for professional domestic services that go beyond just primary assistance.<br> Hence, we set out to restore balance and peace of mind to our clients' lives by providing exceptional domestic services. Every member of our team shares this passion for our work. We understand that a home is more than just a physical space; it's a place where families gather and memories are made.</p>
+  </div>
+</div>
+  <center><img class="Team" src="Images1/TeamMembers.jpg" alt="Team Members"></center>
+  <section class="ftco-section testimony-section bg-light" >
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row pb-4 justify-content-center">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Testimonial</span>
+          <h2 class="mb-4">What Are Clients Says</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container container-2">
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel">
+            <div class="item">
+              <div class="testimony-wrap d-flex">
+                <div class="user-img" style="background-image: url(img/person1.webp)"></div>
+                <div class="text">
+                  <p class="name">Avani Khanna</p>
+                  <span class="position">Bhopal</span>
+                  <p class="mb-2">
+                    This website is a lifesaver for busy individuals like me, offering reliable domestic services.It
+                    streamlines home management with convenience and peace of mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap d-flex">
+                <div class="user-img" style="background-image: url(img/person2.avif)"></div>
+                <div class="text">
+                  <p class="name">Aryan Sharma</p>
+                  <span class="position">Bhopal</span>
+                  <p class="mb-2">
+                    This website is a game-changer for accessing cooking services. It connects us with skilled cooks who
+                    provide delicious meals, saving time and ensuring nutritious eating on a busy schedule."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  </section>
+    <footer class="ftco-footer ">
+   
+      <div class="container">
+        <div class="row mb-1 justify-content-between">
+          <div class= "col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">HELPmate</a></h2>
+              <p style="font-size: 16px;">
+                The Simplest way to get Your Life in Order with the Right Domestic Help.
+  
+              </p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         
+          <div class="col-md-6 col-lg-2">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Explore</h2>
+              <ul class="list-unstyled" style="font-size: 16px;">
+                <li>
+                  <a href="about.html"><span class="fa fa-chevron-right mr-2"></span>About</a>
+                </li>
+                <li>
+                  <a href="pricing.html"><span class="fa fa-chevron-right mr-2"></span>Pricing</a>
+                </li>
+                <li>
+                  <a href="services.html"><span class="fa fa-chevron-right mr-2"></span>Services</a>
+                </li>
+                <li>
+                  <a href="contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <a href="https://maps.app.goo.gl/5B6sstZ1rGZBsAbf7">
+                      <span class="icon fa fa-map marker"></span><span class="text" style="font-size: 16px; text-align: left;">Govt. Women's
+                        Polytechnic College, Shivaji Nagar, Bhopal</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon fa fa-phone"></span><span class="text">0755-2576839</span></a>
+                  </li>
+                  <li>
+                    <a href="mailto:helpmate@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span
+                        class="text"><span class="__cf_email__">Helpmate@gmail.com</span></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+     
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="mb-0" style="color: rgba(255, 255, 255, 0.5)">
+                  Copyright &copy;
+                  <script data-cfasync="false"
+                    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  HELPmate - All Rights Reserved
+  
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+     
+      
+    </footer> 
+  
+
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"870bca409d3831be","version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
